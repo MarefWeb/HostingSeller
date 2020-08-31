@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Payment</title>
+  <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="burger">
+            <span></span>
+          </div>
+          <div class="header__left-side">
+            <a href="main_page.html" class="logo"><img src="img/logo.png" alt="Logo" class="logo__img"></a>
+            <div class="header__menu">
+              <a href="main_page.html">Home</a>
+              <a href="domain_page.html">Domini</a>
+              <a href="hosting_page.html">Hosting</a>
+              <a href="server_page.html">Server</a>
+              <a href="#">Contattaci</a>
+              <div class="header__menu-social-links">
+                <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </div>
+          <a id="top" href="main_page.html" class="logo__small"><img src="img/logo.png" alt="Logo" class="logo__small-img"></a>
+          <div class="header__right-side">
+            <div class="social-links">
+              <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+              <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+              <a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="language_not-main">
+              <p>EN</p>
+            </div>
+            <div class="cart">
+              <button id="cart-btn"><svg id="icons" class="cart__img_not-main" width="35px" height="33px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{ font-weight:bold;}</style></defs><title/><path class="cls-1" d="M13,38H53a2,2,0,0,0,1.93-1.47l6-22A2,2,0,0,0,59,12H12.75L12,7.65A2,2,0,0,0,10,6H5a2,2,0,0,0,0,4H8.33l4.28,24A7,7,0,0,0,13,48h1.68a7,7,0,1,0,12.64,0H37.68a7,7,0,1,0,12.64,0H56a2,2,0,0,0,0-4H13a3,3,0,0,1,0-6ZM56.38,16,51.47,34H16.67L13.46,16ZM24,51a3,3,0,1,1-3-3A3,3,0,0,1,24,51Zm23,0a3,3,0,1,1-3-3A3,3,0,0,1,47,51Z"/></svg></button>  
+              <div class="cart__green-ball" id="cart"></div>
+              <div id="products" class="cart__products">
+                <p id="start">Empty</p>
+                <div class="cart__products-bottom">
+                  <p class="cart__products-cost"> <span class="cart__products-cost-span"> Total: € 29,99 </span>/in month</p>
+                  <button class="cart__products-btn">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="payment">
+
+        <div class="container">
+            <div class="payment__line">
+                <div class="payment__line-item payment__line-item_active">
+                    <div class="payment__line-circle">1</div>
+                    <p class="payment__line-description">Entrance</p>
+                </div>
+                <div class="payment__line-item">
+                    <div class="payment__line-circle">2</div>
+                    <p class="payment__line-description">Billing Information</p>
+                </div>
+                <div class="payment__line-item">
+                    <div class="payment__line-circle">3</div>
+                    <p class="payment__line-description">Payment</p>
+                </div>
+                <div class="payment__line-item">
+                    <div class="payment__line-circle">4</div>
+                    <p class="payment__line-description">Full</p>
+                </div>
+            </div>
+            <div class="payment__main">
+                <form class="payment__form">
+                    <h3 class="payment__form-title">Create New Account</h3>
+                    <div class="payment__form-subtitle">
+                        <p>Already have an account?</p>
+                        <a href="#">Entrance</a>
+                    </div>
+                    <input type="text" class="payment__form-input" placeholder="Email">
+                    <input type="text" class="payment__form-input" placeholder="Username">
+                    <input type="password" class="payment__form-input" placeholder="Password">
+                    <div class="payment__form-addition">
+                        <input type="checkbox" id="payment__form-checkbox" class="payment__form-addition-checkbox">
+                        <label for="payment__form-checkbox"></label>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <input type="submit" class="payment__form-btn" value="Create an account">
+                    <div class="payment__form-description">
+                        Lorem ipsum <a href="#">dolor sit amet,</a> consectetur <a href="#">adipiscing elit</a>
+                    </div>
+                </form>
+                <div class="payment__order">
+                    <div class="payment__order-main">
+                        <h3 class="payment__order-title">Lorem ipsum</h3>
+                        <div class="payment__order-product">
+                            <p class="payment__order-product-title">Server dedicato Economy da 4 GBBundle</p>
+                            <div class="payment__order-product-term-cost">
+                                <div class="payment__order-product-term">
+                                    <p>12 mesi</p>
+                                    <i class="fas fa-caret-down payment__order-product-remove"></i>
+                                </div>
+                                <p class="payment__order-product-per-month">€ 2.171,76 <span>/mese</span> </p>
+                            </div>
+                            <p class="payment__order-product-cost">Rinnovo a € 185,43/mese</p>
+                            <button src="img/close.png" class="payment__order-product-close"></button>
+                        </div>
+                        <div class="payment__order-renouncement">
+                            <p>Vedi dichiarazioni di non responsabilità dell’offerta</p>
+                            <button class="payment__order-renouncement-trash">
+                                <img src="img/trash.png">
+                                <p>Empty trash</p>
+                            </button>
+                        </div>
+                        <div class="payment__order-price">
+                            <p>Subtotale:</p>
+                            <span>€ 2.171,76</span>
+                        </div>
+                        <div class="payment__order-price">
+                            <p>Tasse e commissioni:</p>
+                            <span>€ 434,35</span>
+                        </div>
+                        <a href="#" class="payment__order-promo">Hai un codice promozionale?</a>
+                    </div>
+                    <div class="payment__order-total-price">
+                        <p>Totale(EUR)</p>
+                        <span>€ 2.606,11</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="copyright">
+            <i class="fas fa-copyright"></i>
+            <span>2020.Idea4Host</span>
+          </div>
+          <a href="#">
+            <img src="img/logo.png" alt="Logo">
+          </a>
+          <div class="footer__social-links">
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
